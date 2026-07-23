@@ -49,3 +49,22 @@ for i in range(1, min(num1, num2) + 1):
         gcd = i
 
 print("GCD =", gcd)
+
+
+
+# Niven Number
+
+num = int(input("Enter a number: "))
+
+temp = num
+digit_sum = 0
+
+while temp > 0:
+    digit = temp % 10
+    digit_sum += digit
+    temp //= 10
+
+if num % digit_sum == 0:
+    print(num, "is a Niven Number")
+else:
+    print(num, "is not a Niven Number")
