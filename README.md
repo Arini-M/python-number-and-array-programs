@@ -68,3 +68,28 @@ if num % digit_sum == 0:
     print(num, "is a Niven Number")
 else:
     print(num, "is not a Niven Number")
+
+
+
+# Move Zeros to the End
+
+numbers = []
+
+n = int(input("Enter the number of elements: "))
+
+for i in range(n):
+    num = int(input("Enter element: "))
+    numbers.append(num)
+
+non_zeros = []
+zeros = []
+
+for num in numbers:
+    if num == 0:
+        zeros.append(num)
+    else:
+        non_zeros.append(num)
+
+result = non_zeros + zeros
+
+print("After Moving Zeros:", result)
