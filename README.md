@@ -113,3 +113,24 @@ if digit_sum == num:
     print(num, "is a Neon Number")
 else:
     print(num, "is not a Neon Number")
+
+
+
+# Spy Number
+
+num = int(input("Enter a number: "))
+
+temp = num
+digit_sum = 0
+digit_product = 1
+
+while temp > 0:
+    digit = temp % 10
+    digit_sum += digit
+    digit_product *= digit
+    temp //= 10
+
+if digit_sum == digit_product:
+    print(num, "is a Spy Number")
+else:
+    print(num, "is not a Spy Number")
