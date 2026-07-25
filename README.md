@@ -93,3 +93,23 @@ for num in numbers:
 result = non_zeros + zeros
 
 print("After Moving Zeros:", result)
+
+
+
+# Neon Number
+
+num = int(input("Enter a number: "))
+
+square = num * num
+temp = square
+digit_sum = 0
+
+while temp > 0:
+    digit = temp % 10
+    digit_sum += digit
+    temp //= 10
+
+if digit_sum == num:
+    print(num, "is a Neon Number")
+else:
+    print(num, "is not a Neon Number")
