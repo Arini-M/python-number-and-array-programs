@@ -134,3 +134,21 @@ if digit_sum == digit_product:
     print(num, "is a Spy Number")
 else:
     print(num, "is not a Spy Number")
+
+
+
+# Find Unique Elements
+
+numbers = []
+
+n = int(input("Enter the number of elements: "))
+
+for i in range(n):
+    num = int(input("Enter element: "))
+    numbers.append(num)
+
+print("Unique Elements:")
+
+for num in numbers:
+    if numbers.count(num) == 1:
+        print(num, end=" ")
