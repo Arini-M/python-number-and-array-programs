@@ -19,7 +19,7 @@ print("Second Largest Element:", numbers[-2])
 # Prime Number
 
 num = int(input("Enter a number: "))
-
+ 
 is_prime = True
 
 if num <= 1:
