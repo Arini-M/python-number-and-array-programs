@@ -89,7 +89,7 @@ for num in numbers:
         zeros.append(num)
     else:
         non_zeros.append(num)
-
+ 
 result = non_zeros + zeros
 
 print("After Moving Zeros:", result)
